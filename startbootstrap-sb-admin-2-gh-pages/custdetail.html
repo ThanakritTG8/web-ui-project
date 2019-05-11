@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>About</title>
+    <title>Detail</title>
 
     <!-- Bootstrap CSS -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -292,34 +292,35 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">About</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Customer Detail</h1>
                     </div>
 
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <img src="img/DSCF1568.jpg" width="300" height="auto"
-                                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-                                alt="">
+                                  <!-- Dropdown Card Example -->
+              <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary" id="title"></h6>
+                      <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                          <div class="dropdown-header">Other</div>
+                          <a class="dropdown-item" href="editcust.html" onclick="setcookie(i)">Action</a>
+                          <div class="dropdown-divider"></div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <div class="card">
-                                <img class="card-img-top" src="holder.js/100x180/" alt="">
-                                <div class="card-body">
-                                    <h4 class="card-title">Name</h4>
-                                    <p class="card-text">Thanakrit Thongkhamdee</p>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="card">
-                                <img class="card-img-top" src="holder.js/100x180/" alt="">
-                                <div class="card-body">
-                                    <h4 class="card-title">Student ID</h4>
-                                    <p class="card-text">6030213040</p>
-                                </div>
-                            </div>
-
-                        </div>
+                      </div>
                     </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <p id="cid"></p>
+                        <p id="name"></p>
+                        <p id="company"></p>
+                        <p id="contact"></p>
+                        <p id="address"></p>
+                        
+                    </div>
+                  </div>
 
 
                 </div>
@@ -341,32 +342,37 @@
         </div>
 
         <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-          
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-          
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
-          
-            <!-- Page level plugins -->
-            <script src="vendor/chart.js/Chart.min.js"></script>
-          
-            <!-- Page level custom scripts -->
-            <script src="js/demo/chart-area-demo.js"></script>
-            <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="customer.js"></script>
+        <script src="custdetail.js"></script>
 </body>
 
 </html>
