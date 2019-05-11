@@ -39,7 +39,7 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
-                  <form class="user" id="user" method="get" action="dashboard.html">
+                  <form class="mainform" id="mainform" method="GET" action="dashboard.html" novalidate>
                     <div class="form-group">
                       <input type="email" required class="form-control form-control-user" id="Email" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                     </div>
@@ -85,6 +85,18 @@
   <!-- Custom scripts for all pages-->
   <!-- <script src="js/sb-admin-2.min.js"></script> -->
   <script src="index.js"></script>
+
+  <script>
+      $(function () {
+          $('#mainform').submit(function (event) {
+              var form = $('#mainform')[0];
+              if (form.checkValidity() === false) {
+                  event.preventDefault();
+              }
+              $(this).addClass('was-validated');
+          });
+      });
+  </script>
 
 </body>
 
